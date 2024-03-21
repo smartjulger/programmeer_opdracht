@@ -1,10 +1,9 @@
-
-let startTime=new Date();
-let endTime=new Date();
-let startPressed=false;
-let bgChangeStarted=false;
-let maxWait=20;
-let timerID;
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
  
 function startTest()
 {
@@ -16,7 +15,7 @@ document.response.bgColorChange.selectedIndex].text;
  
 function remark(responseTime)
 {
-    let responseString="";
+    var responseString="";
     if (responseTime < 0.20)
         responseString="Well done!";
     if (responseTime >= 0.30 && responseTime < 0.20)
@@ -38,7 +37,7 @@ function stopTest()
     if(bgChangeStarted)
     {
         endTime=new Date();
-        let responseTime=(endTime.getTime()-startTime.getTime())/1000;
+        var responseTime=(endTime.getTime()-startTime.getTime())/1000;
  
         document.body.style.background="white";       
         alert("Your response time is: " + responseTime +
@@ -61,10 +60,10 @@ function stopTest()
     }
 }
  
-let randMULTIPLIER=0x015a4e35;
-let randINCREMENT=1;
-let today=new Date();
-let randSeed=today.getSeconds();
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
 function randNumber()
 {
     randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
