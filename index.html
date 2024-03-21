@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reactie spel</title>
-    <link rel="stylesheet" href="style.css"><link>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>Reflex game</h1>
-    <h2>test your response time</h2>
-    <h3>how to play?</h3>
-    <p>click op start </p>
+    <h1>Reflex Game</h1>
+    <h2>Test your Response time!</h2>
 
+    <h3>How To Play</h3>
+    <p>Click on "Start" first, and wait until the
+        background color changes. As soon as it
+        changes, hit "stop!"
+    </p>
 
+    <br>
+    <form name="response">
+        Change background color to:
+        <select name="bgColorChange">
+            <option selected>deeppink
+            <option>aliceblue
+            <option>crimson
+            <option>darkkhaki
+            <option>cadetblue
+            <option>darkorchid
+            <option>coral
+            <option>chocolate
+            <option>mediumslateblue
+            <option>tomato
+            <option>darkslategray
+            <option>limegreen
+            <option>cornflowerblue
+            <option>darkolivegreen
+        </select>
+        <br>
+        <br>
 
+        <input type="button" class="btn" value="Start" onClick="startit()">
+        <input type="button" class="btn" value="Stop" onClick="stopTest()">
+    </form>
 
+    <script src="script.js"></script>
+</body>
 
-<script src="script.js"></script>
-</body> 
 </html>
